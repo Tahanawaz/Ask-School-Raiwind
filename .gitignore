@@ -1,0 +1,4 @@
+node_modules/
+.env
+*.log
+ask-school-site.zip
