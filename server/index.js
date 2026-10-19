@@ -22,11 +22,17 @@ app.get('/api/health', (_request, response) => {
 
 app.post('/api/enquiries', async (request, response, next) => {
   try {
-    const { name, email, phone, stage } = request.body;
+    const { name, email, phone, stage, childName, currentGrade, contactPreference, message } = request.body;
     if (![name, email, phone, stage].every((value) => typeof value === 'string' && value.trim())) {
       return response.status(400).json({ message: 'Please complete every field.' });
     }
-    const enquiry = { name: name.trim(), email: email.trim().toLowerCase(), phone: phone.trim(), stage: stage.trim() };
+    const enquiry = {
+      name: name.trim(), email: email.trim().toLowerCase(), phone: phone.trim(), stage: stage.trim(),
+      childName: childName?.trim() || undefined,
+      currentGrade: currentGrade?.trim() || undefined,
+      contactPreference: contactPreference?.trim() || 'Phone',
+      message: message?.trim() || undefined,
+    };
     if (databaseReady) await Enquiry.create(enquiry);
     else console.info('[demo enquiry]', { ...enquiry, email: '[redacted]' });
     return response.status(201).json({ message: databaseReady ? 'Thank you — your school visit request has been received.' : 'Demo enquiry accepted. Add MONGODB_URI to persist it in MongoDB.' });
