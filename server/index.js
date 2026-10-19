@@ -37,6 +37,9 @@ app.use(express.static(distPath));
 app.get('*', (_request, response) => response.sendFile(path.join(distPath, 'index.html')));
 
 app.use((error, _request, response, _next) => {
+  if (error instanceof SyntaxError && error.status === 400 && 'body' in error) {
+    return response.status(400).json({ message: 'Request body must be valid JSON.' });
+  }
   console.error(error);
   response.status(500).json({ message: 'Something went wrong. Please try again.' });
 });
