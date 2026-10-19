@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A premium demo website for ASK School & Academy — nurturing curious minds and building tomorrow's nation.">
+  <meta name="theme-color" content="#fffaf2">
+  <title>ASK School & Academy | We Build The Nation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="announcement">
+    <p><span>Admissions preview</span> Enrolment enquiries are now open</p>
+    <a href="#admissions">Start an enquiry <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="ASK School home">
+      <img src="assets/ask-logo.png" alt="ASK School logo">
+      <span><strong>ASK</strong><small>School &amp; Academy</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#about">Our school</a>
+      <a href="#learning">Learning</a>
+      <a href="#life">School life</a>
+      <a href="#admissions">Admissions</a>
+    </nav>
+    <a class="header-cta" href="#admissions">Book a visit <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#about">Our school</a><a href="#learning">Learning</a><a href="#life">School life</a><a href="#admissions">Admissions</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Welcome to ASK School</p>
+        <h1>Bright minds.<br><em>Brave futures.</em></h1>
+        <p class="hero-lead">A joyful place to question, create and grow — where every learner is known, challenged and ready to shape tomorrow.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#admissions">Explore admissions <span>↗</span></a>
+          <a class="text-link" href="#about"><span class="play">▶</span> Discover our approach</a>
+        </div>
+        <div class="hero-note"><span class="spark">✦</span><p><strong>Whole-child learning</strong><br>Character, curiosity &amp; confidence</p></div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="image-frame">
+          <img src="assets/classroom-hero.png" alt="Students collaborating on a classroom project with their teacher">
+          <div class="image-wash"></div>
+        </div>
+        <div class="hero-badge badge-top"><span>01</span><p>Ideas become<br><strong>possibilities</strong></p></div>
+        <div class="hero-badge badge-bottom"><span class="badge-icon">✦</span><p>Learning with<br><strong>purpose &amp; joy</strong></p></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span>SCROLL TO EXPLORE</span><i></i></div>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="section-number reveal">01 / OUR PROMISE</div>
+      <div class="manifesto-copy reveal">
+        <p>More than a classroom</p>
+        <h2>Education should feel like an <em>invitation</em> — to wonder, to make, and to become.</h2>
+      </div>
+      <div class="manifesto-detail reveal delay-1">
+        <p>At ASK, academics and character move together. Learners build strong foundations while discovering the courage to ask better questions.</p>
+        <a class="arrow-link" href="#learning">Our learning philosophy <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="values" aria-label="Our values">
+      <article class="value-card blue reveal">
+        <span class="value-no">01</span><div class="value-icon">✦</div>
+        <h3>Curious by nature</h3><p>Questions lead the way. We nurture independent thinkers who keep looking closer.</p>
+      </article>
+      <article class="value-card red reveal delay-1">
+        <span class="value-no">02</span><div class="value-icon">◎</div>
+        <h3>Kind in action</h3><p>Empathy is practised every day — in the classroom, on the field and in the community.</p>
+      </article>
+      <article class="value-card yellow reveal delay-2">
+        <span class="value-no">03</span><div class="value-icon">↗</div>
+        <h3>Ready for tomorrow</h3><p>Knowledge meets creativity, communication and the confidence to make a difference.</p>
+      </article>
+    </section>
+
+    <section class="learning" id="learning">
+      <div class="learning-intro reveal">
+        <div><p class="eyebrow light"><span></span> The learning journey</p><h2>Every stage,<br><em>thoughtfully shaped.</em></h2></div>
+        <p>Age-aware experiences. Strong foundations. Room for every student to find their spark.</p>
+      </div>
+      <div class="program-shell reveal">
+        <div class="program-tabs" role="tablist" aria-label="Learning stages">
+          <button role="tab" id="tab-early" aria-controls="panel-early" aria-selected="true" data-program="early"><span>01</span> Early years <small>Ages 3–5</small></button>
+          <button role="tab" id="tab-primary" aria-controls="panel-primary" aria-selected="false" data-program="primary"><span>02</span> Primary <small>Grades 1–5</small></button>
+          <button role="tab" id="tab-middle" aria-controls="panel-middle" aria-selected="false" data-program="middle"><span>03</span> Middle school <small>Grades 6–8</small></button>
+          <button role="tab" id="tab-academy" aria-controls="panel-academy" aria-selected="false" data-program="academy"><span>04</span> Academy <small>Focused support</small></button>
+        </div>
+        <div class="program-content">
+          <div class="program-panel active" id="panel-early" role="tabpanel" aria-labelledby="tab-early">
+            <span class="program-kicker">Play • Belong • Discover</span>
+            <h3>A bright beginning for lifelong learners.</h3>
+            <p>Purposeful play, language-rich spaces and caring routines help young learners feel secure as they explore their world.</p>
+            <ul><li>Creative exploration</li><li>Early literacy &amp; numeracy</li><li>Social-emotional growth</li></ul>
+          </div>
+          <div class="program-panel" id="panel-primary" role="tabpanel" aria-labelledby="tab-primary" hidden>
+            <span class="program-kicker">Build • Question • Connect</span>
+            <h3>Strong foundations, alive with curiosity.</h3>
+            <p>Clear teaching and hands-on enquiry develop confident readers, capable mathematicians and thoughtful collaborators.</p>
+            <ul><li>Core academic mastery</li><li>Project-based learning</li><li>Arts, sport &amp; expression</li></ul>
+          </div>
+          <div class="program-panel" id="panel-middle" role="tabpanel" aria-labelledby="tab-middle" hidden>
+            <span class="program-kicker">Think • Create • Lead</span>
+            <h3>Independent minds, ready for what comes next.</h3>
+            <p>Students connect subject knowledge to complex problems while building ownership, resilience and leadership.</p>
+            <ul><li>Subject depth</li><li>STEM &amp; design thinking</li><li>Leadership opportunities</li></ul>
+          </div>
+          <div class="program-panel" id="panel-academy" role="tabpanel" aria-labelledby="tab-academy" hidden>
+            <span class="program-kicker">Focus • Practise • Progress</span>
+            <h3>Personal support that turns effort into progress.</h3>
+            <p>Small-group guidance and deliberate practice give learners the clarity and confidence to reach their next milestone.</p>
+            <ul><li>Targeted support</li><li>Exam preparation</li><li>Progress feedback</li></ul>
+          </div>
+          <div class="program-art" aria-hidden="true"><div class="sun"></div><div class="book-shape"></div><div class="program-word">ASK</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="school-life" id="life">
+      <div class="life-heading reveal">
+        <div class="section-number">02 / BEYOND THE LESSON</div>
+        <h2>School is where life<br><em>comes alive.</em></h2>
+      </div>
+      <div class="life-grid">
+        <article class="life-feature reveal"><span>CREATE</span><div class="illustration art-studio"><i></i><b>ART</b></div><h3>Arts &amp; expression</h3><p>A space for original voices, brave ideas and imagination without limits.</p></article>
+        <article class="life-feature reveal delay-1"><span>MOVE</span><div class="illustration sport"><i></i><b>GO!</b></div><h3>Sport &amp; wellbeing</h3><p>Teamwork, movement and healthy habits that grow strength from the inside out.</p></article>
+        <article class="life-feature reveal delay-2"><span>EXPLORE</span><div class="illustration science"><i></i><b>?</b></div><h3>Clubs &amp; discovery</h3><p>New interests become real skills through science, technology and student-led clubs.</p></article>
+      </div>
+    </section>
+
+    <section class="motto-band" aria-label="School motto"><div>WE BUILD THE NATION <span>✦</span> WE BUILD THE NATION <span>✦</span> WE BUILD THE NATION <span>✦</span></div></section>
+
+    <section class="admissions" id="admissions">
+      <div class="admissions-card reveal">
+        <div class="admissions-logo"><img src="assets/ask-logo.png" alt=""></div>
+        <div class="admissions-copy"><p class="eyebrow"><span></span> Your journey starts here</p><h2>Come and see what<br><em>learning can feel like.</em></h2><p>Meet our team, explore the learning spaces and ask every question on your mind.</p></div>
+        <form class="enquiry-form" id="enquiry-form">
+          <label>Parent or guardian name<input name="name" autocomplete="name" required placeholder="Your full name"></label>
+          <label>Email address<input name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label>Interested in<select name="stage" required><option value="">Choose a learning stage</option><option>Early years</option><option>Primary</option><option>Middle school</option><option>Academy</option></select></label>
+          <button class="button primary" type="submit">Request a school visit <span>↗</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="faq-heading reveal"><div class="section-number">03 / GOOD TO KNOW</div><h2>Questions,<br><em>answered.</em></h2></div>
+      <div class="accordion reveal">
+        <details><summary>How does the admissions process work?<span>+</span></summary><p>Start with an enquiry or school visit. The admissions team can then share the age-appropriate next steps and required documents.</p></details>
+        <details><summary>What makes the ASK approach different?<span>+</span></summary><p>The demo programme balances clear academic foundations with enquiry, creativity, collaboration and character development.</p></details>
+        <details><summary>Can I visit before applying?<span>+</span></summary><p>Yes. Use the visit form above and the school team can follow up with available dates.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-main">
+      <div class="footer-brand"><img src="assets/ask-logo.png" alt="ASK School logo"><h2>ASK <span>School &amp; Academy</span></h2><p>We build the nation.</p></div>
+      <div class="footer-links"><div><h3>Explore</h3><a href="#about">Our school</a><a href="#learning">Learning journey</a><a href="#life">School life</a></div><div><h3>Connect</h3><a href="#admissions">Book a visit</a><a href="mailto:admissions@example.com">Admissions email</a><a href="tel:+923000000000">+92 300 000 0000</a></div></div>
+      <a class="back-top" href="#top" aria-label="Back to top">↑</a>
+    </div>
+    <div class="footer-bottom"><p>© 2026 ASK School &amp; Academy. Demo website concept.</p><p>Contact details are placeholders for preview.</p></div>
+  </footer>
+</body>
+</html>
