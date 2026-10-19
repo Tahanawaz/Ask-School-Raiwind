@@ -90,7 +90,7 @@ function App() {
         <div className="campus-images reveal">
           <figure className="campus-main"><img src="/assets/campus-life.png" alt="Illustrative view of students arriving at a modern school campus" /><figcaption>Illustrative campus vision</figcaption></figure>
           <figure className="campus-small"><img src="/assets/early-years.png" alt="Young learners reading with their teacher" /></figure>
-          <div className="campus-stamp"><strong>ASK</strong><span>Learn • Belong • Lead</span></div>
+          <div className="campus-stamp"><img src="/assets/ask-logo.png" alt="ASK School emblem" /></div>
         </div>
         <div className="campus-copy reveal delay-1"><p className="eyebrow"><span></span> The ASK experience</p><h2>A place designed for<br /><em>belonging and becoming.</em></h2><p>Thoughtful spaces are only the beginning. The real difference is how learners feel within them: welcomed, secure and inspired to take the next brave step.</p><div className="experience-list"><div><span>01</span><p><strong>Known by name</strong><small>Relationships create the confidence to learn.</small></p></div><div><span>02</span><p><strong>Purposeful challenge</strong><small>High expectations meet the right support.</small></p></div><div><span>03</span><p><strong>Room to discover</strong><small>Ideas move from curiosity into action.</small></p></div></div><a className="arrow-link" href="#admissions">Arrange a guided visit <span>→</span></a></div>
       </section>
